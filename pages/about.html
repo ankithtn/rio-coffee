@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Rio Fresh Coffee</title>
+  <meta name="description" content="The story behind Rio Fresh Coffee — our mission, vision, and the people who make every cup extraordinary." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR (same across all pages)
+  ══════════════════════════════════════ -->
+  <div class="navbar-wrap">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="navbar__logo" aria-label="Rio Fresh Coffee home">
+        <img src="/assets/images/riocoffeelogo2.png" alt="Rio Fresh Coffee" />
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="navbar__cta">Get in Touch</a></li>
+      </ul>
+      <button class="navbar__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO — ABOUT
+  ══════════════════════════════════════ -->
+  <section class="about-hero" aria-label="About page hero">
+
+    <div class="container about-hero__inner">
+      <div class="about-hero__content">
+        <div class="about-hero__tag reveal">Our Story</div>
+        <h1 class="about-hero__title reveal reveal-delay-1">
+          More than a cup —<br />
+          <em>a craft perfected.</em>
+        </h1>
+        <p class="about-hero__sub reveal reveal-delay-2">
+          Founded on a passion for great coffee and a vision to bring
+          it to every corner of the workplace.
+        </p>
+      </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       STORY SECTION
+  ══════════════════════════════════════ -->
+  <section class="about-story" aria-label="Our story">
+    <div class="container">
+
+      <div class="about-story__grid">
+
+        <!-- Image block — replace src -->
+        <div class="about-story__visual reveal">
+          <div class="about-story__img-wrap">
+            <img
+              src="YOUR_STORY_IMAGE_URL_HERE"
+              alt="Rio Coffee founders / story image"
+              class="about-story__img"
+              onerror="this.closest('.about-story__img-wrap').classList.add('no-image')"
+            />
+            <!-- Floating accent card -->
+            <div class="about-story__accent-card" aria-hidden="true">
+              <span class="accent-card__year">Est.</span>
+              <span class="accent-card__num">20XX</span>
+              <span class="accent-card__label"><!-- founding year --></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text block -->
+        <div class="about-story__text">
+          <div class="section-tag reveal">Who We Are</div>
+          <h2 class="section-heading reveal reveal-delay-1">
+            <!-- Your company story headline -->
+            <em>Your headline</em><br />goes here.
+          </h2>
+          <p class="section-body reveal reveal-delay-2">
+            <!-- Paragraph 1: Company origin story. How did Rio start? What was the founding moment?
+                 Example: "Rio Fresh Coffee was born in [city/year] from a belief that..."  -->
+            [Your company origin story goes here. Describe how Rio Coffee started,
+            the founding moment, and what drove the founders to build this business.]
+          </p>
+          <p class="section-body reveal reveal-delay-2">
+            <!-- Paragraph 2: Growth and present day. Where are you now?
+                 Clients, geographies, milestones. -->
+            [Describe the growth journey — key milestones, geographies served,
+            number of clients, or what makes Rio stand out today.]
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       MISSION & VISION — SPLIT CARDS
+  ══════════════════════════════════════ -->
+  <section class="about-mv" aria-label="Mission and Vision">
+    <div class="container">
+
+      <div class="about-mv__grid">
+
+        <!-- Mission card -->
+        <article class="mv-card mv-card--mission reveal" aria-label="Our Mission">
+          <div class="mv-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="7"  stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="2"  fill="currentColor"/>
+              <line x1="16" y1="2"  x2="16" y2="6"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="16" y1="26" x2="16" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="2"  y1="16" x2="6"  y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="26" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="mv-card__label">Our Mission</div>
+          <h3 class="mv-card__title">
+            <!-- Mission headline — one strong line -->
+            [Your mission headline]
+          </h3>
+          <p class="mv-card__body">
+            <!-- 2–3 sentences. What do you do, for whom, and why?
+                 Example: "To deliver the finest coffee experience to every corporate office —
+                 through premium sourcing, seamless service, and a relentless commitment to quality." -->
+            [Write your mission statement here. Keep it focused — what you do,
+            who you serve, and the value you deliver.]
+          </p>
+        </article>
+
+        <!-- Vision card -->
+        <article class="mv-card mv-card--vision reveal reveal-delay-2" aria-label="Our Vision">
+          <div class="mv-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M2 16C2 16 7 6 16 6s14 10 14 10-5 10-14 10S2 16 2 16Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 4v2M16 26v2M4 16H2M30 16h-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="mv-card__label">Our Vision</div>
+          <h3 class="mv-card__title">
+            <!-- Vision headline — aspirational, forward-looking -->
+            [Your vision headline]
+          </h3>
+          <p class="mv-card__body">
+            <!-- 2–3 sentences. Where do you want to be in the future?
+                 Example: "To become the most trusted coffee partner for workplaces across India —
+                 setting a new standard for quality, reliability, and the everyday coffee ritual." -->
+            [Write your vision statement here. Where is Rio going? What does
+            the future look like for this company?]
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ══════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════ -->
+  <section class="about-stats" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats-row">
+
+        <div class="stat-block reveal">
+          <div class="stat-block__num" data-target="500" data-suffix="+">0+</div>
+          <div class="stat-block__label">
+            <!-- e.g. "Happy Clients" -->
+            [Stat label]
+          </div>
+        </div>
+
+        <div class="stat-block__divider" aria-hidden="true"></div>
+
+        <div class="stat-block reveal reveal-delay-1">
+          <div class="stat-block__num" data-target="15" data-suffix="+">0+</div>
+          <div class="stat-block__label">
+            <!-- e.g. "Years of Experience" -->
+            [Stat label]
+          </div>
+        </div>
+
+        <div class="stat-block__divider" aria-hidden="true"></div>
+
+        <div class="stat-block reveal reveal-delay-2">
+          <div class="stat-block__num" data-target="1000" data-suffix="+">0+</div>
+          <div class="stat-block__label">
+            <!-- e.g. "Cups Brewed Daily" -->
+            [Stat label]
+          </div>
+        </div>
+
+        <div class="stat-block__divider" aria-hidden="true"></div>
+
+        <div class="stat-block reveal reveal-delay-3">
+          <div class="stat-block__num" data-target="10" data-suffix="+">0+</div>
+          <div class="stat-block__label">
+            <!-- e.g. "Cities Served" -->
+            [Stat label]
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       VALUES — HORIZONTAL STRIP
+  ══════════════════════════════════════ -->
+  <section class="about-values" aria-label="Our values">
+    <div class="container">
+
+      <div class="section-tag reveal">What Drives Us</div>
+      <h2 class="section-heading reveal reveal-delay-1">
+        The values behind<br /><em>every cup we serve.</em>
+      </h2>
+
+      <div class="values-grid">
+
+        <article class="value-item reveal reveal-delay-1">
+          <div class="value-item__num" aria-hidden="true">01</div>
+          <div class="value-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <h3 class="value-item__title">Quality First</h3>
+          <p class="value-item__desc">
+            <!-- Describe your commitment to quality — beans, sourcing, service. -->
+            [Describe what quality means to Rio — in sourcing, roasting,
+            and the service you provide to clients.]
+          </p>
+        </article>
+
+        <article class="value-item reveal reveal-delay-2">
+          <div class="value-item__num" aria-hidden="true">02</div>
+          <div class="value-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="value-item__title">Client Focus</h3>
+          <p class="value-item__desc">
+            <!-- Describe how you prioritise your clients — responsiveness, reliability. -->
+            [Describe how Rio puts clients first — fast response,
+            reliability, and going the extra mile for every account.]
+          </p>
+        </article>
+
+        <article class="value-item reveal reveal-delay-3">
+          <div class="value-item__num" aria-hidden="true">03</div>
+          <div class="value-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="value-item__title">Integrity</h3>
+          <p class="value-item__desc">
+            <!-- Transparency, honest sourcing, fair practices. -->
+            [Describe Rio's commitment to transparency — in sourcing,
+            pricing, and partnerships with clients and estates.]
+          </p>
+        </article>
+
+        <article class="value-item reveal reveal-delay-4">
+          <div class="value-item__num" aria-hidden="true">04</div>
+          <div class="value-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <h3 class="value-item__title">Continuous Growth</h3>
+          <p class="value-item__desc">
+            <!-- Innovation, improving products, expanding service. -->
+            [Describe how Rio is always improving — new products,
+            better machines, expanding reach, staying ahead of the curve.]
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+            <div class="footer__col-title">Rio Coffee</div>
+          <p class="footer__brand-desc">
+            Premium coffee &amp; vending machine solutions for corporate
+            offices and MNCs. Fresh beans, seamless service.
+          </p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="4"/>
+                <line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.5"/>
+                <path d="M12 16v-5"/><path d="M12 13a3 3 0 0 1 5 0v3"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="X / Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.74-8.865L2.25 2.25h6.993l4.259 5.631 4.742-5.631Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links" role="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Products</div>
+          <ul class="footer__links" role="list">
+            <li><a href="products.html">Raw Blend Beans</a></li>
+            <li><a href="products.html">Roasted Beans</a></li>
+            <li><a href="products.html">Premium Tea</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links" role="list">
+            <li><a href="services.html">Machine Rental</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+            <li><a href="services.html">Bean Supply</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Rio Fresh Coffee. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
