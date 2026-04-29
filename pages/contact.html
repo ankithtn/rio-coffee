@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Rio Fresh Coffee | Vending Machine Services</title>
+  <meta name="description" content="Get in touch with Rio Fresh Coffee for coffee and tea vending machine rentals, maintenance, and fresh coffee bean or tea leaf supply for corporate offices." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div class="navbar-wrap">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="navbar__logo" aria-label="Rio Fresh Coffee home">
+        <img src="/assets/images/riocoffeelogo2.png" alt="Rio Fresh Coffee" />
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="navbar__cta active">Get in Touch</a></li>
+      </ul>
+      <button class="navbar__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+    <section class="contact-main" aria-label="Contact form and details">
+      <div class="container contact-grid">
+        <div class="contact-info" aria-label="Contact information">
+          <article class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8 9.69a16 16 0 0 0 6.31 6.31l1.25-1.25a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-card__label">Call Us</div>
+            <h2 class="contact-card__title">Talk to our team</h2>
+            <a class="contact-card__link" href="tel:+910000000000">+91 00000 00000</a>
+          </article>
+
+          <article class="contact-card reveal reveal-delay-1">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="m3 7 9 6 9-6"/>
+              </svg>
+            </div>
+            <div class="contact-card__label">Email</div>
+            <h2 class="contact-card__title">Send an enquiry</h2>
+            <a class="contact-card__link" href="mailto:info@riofreshcoffee.com">info@riofreshcoffee.com</a>
+          </article>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <div class="contact-form__intro">
+            <div class="section-tag">Enquiry Form</div>
+            <h2 class="section-heading">
+              Tell us what your<br /><em>workplace needs.</em>
+            </h2>
+            <p class="section-body">
+              Share your vending requirement and our team will get back with
+              the right machine, beverage, and servicing recommendation.
+            </p>
+          </div>
+
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="you@gmail.com" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="form-row form-row--single">
+              <div class="form-field">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="City / area" autocomplete="address-level2" required />
+              </div>
+            </div>
+
+            <div class="service-options">
+              <div class="service-options__label">Interested In</div>
+              <div class="service-options__grid">
+                <label class="service-choice">
+                  <input type="checkbox" name="interest[]" value="Vending machine rental" />
+                  <span>Vending Machine Rental</span>
+                </label>
+                <label class="service-choice">
+                  <input type="checkbox" name="interest[]" value="Machine maintenance" />
+                  <span>Machine Maintenance</span>
+                </label>
+                <label class="service-choice">
+                  <input type="checkbox" name="interest[]" value="Coffee and tea supply" />
+                  <span>Coffee &amp; Tea Supply</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about the vending setup, beverages, quantity, or service support you need." required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Rio Coffee website enquiry" />
+            <button class="btn btn--primary" type="submit">
+              Send Enquiry
+              <span class="btn__arrow" aria-hidden="true">-></span>
+            </button>
+            <p class="form-note">
+              Need direct mail instead? Write to
+              <a href="mailto:info@riofreshcoffee.com">info@riofreshcoffee.com</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-map" aria-label="Rio Coffee location">
+      <div class="container">
+        <div class="contact-map__header">
+          <div class="contact-map__header-text">
+            <div class="section-tag reveal">Find Us</div>
+            <h2 class="section-heading reveal reveal-delay-1">
+              Visit or reach out for<br /><em>corporate vending support.</em>
+            </h2>
+          </div>
+          <a class="btn btn--ghost1 reveal reveal-delay-2" href="https://www.google.com/maps/search/?api=1&query=Rio%20Coffee" target="_blank" rel="noopener">
+            Open in Maps
+            <span class="btn__arrow" aria-hidden="true">-></span>
+          </a>
+        </div>
+
+        <div class="map-frame reveal reveal-delay-2">
+          <iframe
+            title="Rio Coffee map"
+            src="https://www.google.com/maps?q=Rio%20Coffee&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <div class="footer__col-title">Rio Coffee</div>
+          <p class="footer__brand-desc">
+            Premium coffee &amp; vending machine solutions for corporate
+            offices and MNCs. Fresh beans, seamless service.
+          </p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="4"/>
+                <line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.5"/>
+                <path d="M12 16v-5"/><path d="M12 13a3 3 0 0 1 5 0v3"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="X / Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.74-8.865L2.25 2.25h6.993l4.259 5.631 4.742-5.631Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links" role="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Products</div>
+          <ul class="footer__links" role="list">
+            <li><a href="products.html">Raw Blend Beans</a></li>
+            <li><a href="products.html">Roasted Beans</a></li>
+            <li><a href="products.html">Premium Tea</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links" role="list">
+            <li><a href="services.html">Machine Rental</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+            <li><a href="services.html">Bean Supply</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Rio Fresh Coffee. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
