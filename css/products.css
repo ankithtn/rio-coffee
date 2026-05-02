@@ -101,7 +101,7 @@
   box-shadow: var(--shadow-lg);
 }
 
-.shelf-product--roasted {
+.shelf-product--powder {
   min-height: 500px;
   background: var(--brown-dark);
   color: var(--amber-pale);
@@ -117,7 +117,7 @@
   margin-bottom: 24px;
 }
 
-.shelf-product--roasted .shelf-product__visual {
+.shelf-product--powder .shelf-product__visual {
   background: linear-gradient(145deg, rgba(250,247,242,0.09), rgba(232,160,32,0.12));
 }
 
@@ -125,55 +125,40 @@
   background: linear-gradient(145deg, rgba(168,200,128,0.2), rgba(250,247,242,0.42));
 }
 
-.shelf-product__jar {
-  width: min(54%, 190px);
-  aspect-ratio: 0.78;
-  border-radius: 26px 26px 18px 18px;
-  border: 1px solid rgba(107,45,45,0.16);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.56), rgba(255,255,255,0.10)),
-    radial-gradient(circle at 35% 55%, rgba(107,45,45,0.42), transparent 22%),
-    radial-gradient(circle at 62% 60%, rgba(232,160,32,0.38), transparent 24%),
-    var(--amber-pale);
-  box-shadow: 0 28px 60px rgba(107,45,45,0.18);
-  position: relative;
+.shelf-product__image {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: 0 28px 60px rgba(107,45,45,0.14);
 }
 
-.shelf-product__jar::before {
-  content: '';
-  position: absolute;
-  left: 18%;
-  right: 18%;
-  top: -18px;
-  height: 28px;
-  border-radius: 12px 12px 8px 8px;
-  background: var(--brown);
+.shelf-product__image[src*="YOUR_"] {
+  display: none;
 }
 
-.shelf-product__jar span {
-  position: absolute;
-  left: 18%;
-  right: 18%;
-  bottom: 22%;
-  height: 16%;
-  border-radius: var(--radius-pill);
-  background: rgba(107,45,45,0.12);
+.shelf-product__visual:has(.shelf-product__image[src*="YOUR_"])::after {
+  content: 'product image URL ';
+  color: var(--text-muted);
+  border: 1.5px dashed rgba(107,45,45,0.22);
+  border-radius: var(--radius-md);
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 22px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.shelf-product--roasted .shelf-product__jar {
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.4), rgba(255,255,255,0.08)),
-    radial-gradient(circle at 36% 56%, rgba(57,27,27,0.68), transparent 22%),
-    radial-gradient(circle at 66% 62%, rgba(122,53,53,0.62), transparent 24%),
-    #D4A880;
-}
-
-.shelf-product--tea .shelf-product__jar {
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.52), rgba(255,255,255,0.08)),
-    radial-gradient(circle at 36% 56%, rgba(86,124,62,0.44), transparent 22%),
-    radial-gradient(circle at 66% 62%, rgba(168,200,128,0.46), transparent 24%),
-    #E8F0E0;
+.shelf-product--powder .shelf-product__visual:has(.shelf-product__image[src*="YOUR_"])::after {
+  color: rgba(245,240,220,0.64);
+  border-color: rgba(245,192,96,0.38);
 }
 
 .shelf-product__label {
@@ -185,7 +170,7 @@
   margin-bottom: 10px;
 }
 
-.shelf-product--roasted .shelf-product__label {
+.shelf-product--powder .shelf-product__label {
   color: rgba(245,192,96,0.72);
 }
 
@@ -197,7 +182,7 @@
   margin-bottom: 10px;
 }
 
-.shelf-product--roasted .shelf-product__title {
+.shelf-product--powder .shelf-product__title {
   color: var(--amber-pale);
 }
 
@@ -207,7 +192,7 @@
   line-height: 1.7;
 }
 
-.shelf-product--roasted .shelf-product__copy p {
+.shelf-product--powder .shelf-product__copy p {
   color: rgba(245,240,220,0.6);
 }
 
@@ -250,9 +235,21 @@
   padding: 28px;
 }
 
-.product-feature__placeholder {
+.product-feature__image {
   width: 100%;
   height: 100%;
+  min-height: 250px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
+.product-feature__image[src*="YOUR_"] {
+  display: none;
+}
+
+.product-feature__media:has(.product-feature__image[src*="YOUR_"])::after {
+  content: ' product image URL';
+  width: 100%;
   min-height: 250px;
   border: 1.5px dashed rgba(107,45,45,0.24);
   border-radius: var(--radius-lg);
@@ -268,7 +265,7 @@
   text-transform: uppercase;
 }
 
-.product-feature--roasted .product-feature__media {
+.product-feature--powder .product-feature__media {
   background: linear-gradient(145deg, #F0E8E0, #D4A880);
 }
 
@@ -385,7 +382,7 @@
   }
 
   .shelf-product,
-  .shelf-product--roasted {
+  .shelf-product--powder {
     min-height: 380px;
   }
 }
