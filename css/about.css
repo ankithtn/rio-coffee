@@ -46,7 +46,7 @@
   padding: 6px 14px;
   border-radius: var(--radius-pill);
   margin-bottom: 24px;
-  
+  max-width: 1250px;
 }
 
 .about-hero__tag::before {
@@ -64,18 +64,20 @@
   line-height: 1.1;
   color: var(--brown-dark);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-hero__title em {
   font-style: italic;
-  color: #7A6A5A;
+  color: var(--amber);
 }
 
 .about-hero__sub {
   font-size: 1.05rem;
-  color: #7A6A5A;
+  color: var(--text-muted);
   line-height: 1.75;
   max-width: 480px;
+  margin-left: 31px;
 }
 
 /* Scroll indicator — bottom right */
@@ -153,7 +155,7 @@
 }
 
 .about-story__img-wrap:has(img[src*="YOUR"])::after {
-  content: '📷 Add your story image here';
+  content: 'Add your story image here';
   position: absolute;
   inset: 0;
   display: flex;

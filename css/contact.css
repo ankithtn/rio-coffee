@@ -88,6 +88,10 @@
   box-shadow: var(--shadow-md);
 }
 
+.contact-form-wrap .section-heading {
+  font-family: var(--font-body);
+}
+
 .contact-form__intro {
   margin-bottom: 34px;
 }

@@ -142,7 +142,7 @@
 }
 
 .machine-stat__value {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   color: var(--amber-light);
   font-size: 1.35rem;
   font-weight: 700;
@@ -316,8 +316,8 @@
 
 .spec-card__value {
   color: var(--brown-dark);
-  font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-size: 1.22rem;
   font-weight: 700;
   line-height: 1.25;
 }
