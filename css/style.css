@@ -560,7 +560,7 @@ ul { list-style: none; }
   font-size: 13px;
   color: rgba(245,192,96,0.55);
   text-align: center;
-  margin-top: 8px;
+  margin-top: 14px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -679,7 +679,7 @@ ul { list-style: none; }
 }
 
 .product-card__visual:has(.product-card__image[src*="YOUR_"])::after {
-  content: 'Add product image URL here';
+  content: ' product image URL ';
   color: var(--text-muted);
   border: 1.5px dashed rgba(107,45,45,0.22);
   border-radius: var(--radius-md);
