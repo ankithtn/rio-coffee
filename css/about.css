@@ -155,7 +155,7 @@
 }
 
 .about-story__img-wrap:has(img[src*="YOUR"])::after {
-  content: 'Add company image URL here';
+  content: ' company image URL ';
   position: absolute;
   inset: 0;
   display: flex;
