@@ -471,9 +471,17 @@
 }
 
 @media (max-width: 768px) {
-  .about-hero { min-height: 70vh; padding-bottom: 56px; }
-  .about-hero__inner { flex-direction: column; align-items: flex-start; gap: 40px; }
+  .about-hero { min-height: auto; padding: 128px 0 48px; }
+  .about-hero__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding-top: 0;
+    text-align: center;
+  }
   .about-hero__title { font-size: clamp(2.2rem, 7vw, 3rem); }
+  .about-hero__sub { margin: 0 auto; }
   .about-hero__scroll { display: none; }
 
   .about-story { padding: 72px 0; }
