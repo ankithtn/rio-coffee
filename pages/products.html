@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products | Rio Fresh Coffee</title>
   <meta name="description"
-    content="Explore Rio Fresh Coffee products including raw blend coffee beans, grounded coffee powder, and premium tea leaves for vending machines." />
+    content="Explore Rio Fresh Coffee products including roasted coffee beans, filter coffee powder, premium tea leaves, instant coffee powder, dip tea bags, and beverage accompaniments for vending solutions." />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/products.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,8 +44,8 @@
           </h1>
           <p class="products-hero__sub reveal reveal-delay-2">
             Rio Coffee supplies the core products behind a reliable workplace
-            beverage program: raw coffee blends, grounded coffee powder,
-            and premium tea leaves made for vending machine use.
+            beverage program: roasted beans, filter coffee powder, premium tea
+            leaves, and instant coffee powder made for vending machine use.
           </p>
           <a class="btn btn--primary reveal reveal-delay-3" href="contact.html">
             Enquire for Supply
@@ -94,73 +94,204 @@
       <div class="container">
         <div class="section-tag reveal">Product Range</div>
         <h2 class="section-heading reveal reveal-delay-1">
-          Three essentials for a<br /><em>complete vending solution.</em>
+          Four core products for a<br /><em>complete vending solution.</em>
         </h2>
 
-        <div class="product-feature-stack">
-          <article class="product-feature reveal">
-            <div class="product-feature__media">
-              <img class="product-feature__image" src="/assets/images/bean3.jpg"
-                alt="High-quality raw blend coffee beans" />
-            </div>
-            <div class="product-feature__content">
-              <div class="product-feature__label">High-Quality Roasted Beans</div>
-              <h3 class="product-feature__title">Roasted Coffee Beans</h3>
-              <p class="product-feature__text">
-                Sourced from the heart of Chikkamagaluru's coffee estates for businesses that need
-                dependable taste, aroma, and consistency across vending usage.
-                Rio keeps this supply aligned with workplace consumption and
-                machine requirements.
-              </p>
-              <div class="product-tags" aria-label="Product qualities">
-                <span>Blend-ready</span>
-                <span>Fresh supply</span>
-                <span>Vending suitable</span>
+        <div class="products-carousel reveal reveal-delay-2" data-product-carousel>
+          <div class="products-carousel__controls" aria-label="Product carousel controls">
+            <button class="products-carousel__arrow" type="button" data-carousel-prev aria-label="Previous product">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="products-carousel__arrow" type="button" data-carousel-next aria-label="Next product">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="products-carousel__track" data-carousel-track>
+            <article class="product-card product-card--active">
+              <div class="product-card__media">
+                <img class="product-card__image" src="/assets/images/bean3.jpg" alt="Roasted coffee beans" />
               </div>
+              <div class="product-card__content">
+                <div class="product-card__label">01 / Coffee Beans</div>
+                <h3 class="product-card__title">Roasted Coffee Beans</h3>
+                <p class="product-card__text">
+                  Roasted beans sourced for dependable aroma, body, and taste across office vending programs.
+                </p>
+                <div class="product-tags" aria-label="Roasted coffee bean qualities">
+                  <span>Estate sourced</span>
+                  <span>Fresh aroma</span>
+                  <span>Workplace ready</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card product-card--powder">
+              <div class="product-card__media">
+                <img class="product-card__image" src="/assets/images/coffeepowder3.jpg" alt="Filter coffee powder" />
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__label">02 / Filter Powder</div>
+                <h3 class="product-card__title">Grounded Coffee Powder</h3>
+                <p class="product-card__text">
+                  Filter-style coffee powder prepared for consistent vending performance and an everyday office cup.
+                </p>
+                <div class="product-tags" aria-label="Filter coffee powder qualities">
+                  <span>Filter style</span>
+                  <span>Machine ready</span>
+                  <span>Balanced cup</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card product-card--tea">
+              <div class="product-card__media">
+                <img class="product-card__image" src="/assets/images/tealeaves3.jpg" alt="Premium tea leaves" />
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__label">03 / Tea Supply</div>
+                <h3 class="product-card__title">Premium Tea Leaves</h3>
+                <p class="product-card__text">
+                  Tea leaves selected for vending solutions that need dependable flavour and easy daily service.
+                </p>
+                <div class="product-tags" aria-label="Premium tea leaf qualities">
+                  <span>Tea service</span>
+                  <span>Steady supply</span>
+                  <span>Office friendly</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card product-card--instant">
+              <div class="product-card__media">
+                <img class="product-card__image" src="/assets/images/instantcoffee.jpg"
+                  alt="Instant coffee powder" />
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__label">04 / Instant Coffee</div>
+                <h3 class="product-card__title">Instant Coffee Powder</h3>
+                <p class="product-card__text">
+                  A practical instant coffee option for vending setups that need quick preparation and reliable output.
+                </p>
+                <div class="product-tags" aria-label="Instant coffee powder qualities">
+                  <span>Quick serve</span>
+                  <span>Vending ready</span>
+                  <span>Consistent supply</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="products-carousel__dots" aria-label="Product positions">
+            <button type="button" class="products-carousel__dot is-active" data-carousel-dot="0"
+              aria-label="Go to product 1"></button>
+            <button type="button" class="products-carousel__dot" data-carousel-dot="1"
+              aria-label="Go to product 2"></button>
+            <button type="button" class="products-carousel__dot" data-carousel-dot="2"
+              aria-label="Go to product 3"></button>
+            <button type="button" class="products-carousel__dot" data-carousel-dot="3"
+              aria-label="Go to product 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tea-feature-section" aria-label="Dip tea bags">
+      <div class="container">
+        <article class="tea-feature-card reveal">
+          <div class="tea-feature-card__copy">
+            <div class="section-tag">Tea Variants</div>
+            <h2 class="section-heading">
+              Dip tea bags for offices that need<br /><em>more than one tea option.</em>
+            </h2>
+            <p class="section-body">
+              Rio Coffee can also support vending and pantry requirements with dip tea bags in popular everyday
+              variants,
+              making it easy to offer multiple tea preferences without complicating the beverage setup.
+            </p>
+          </div>
+          <div class="tea-feature-card__variants" aria-label="Dip tea bag variants">
+            <span>Plain</span>
+            <span>Masala</span>
+            <span>Green Lemon Honey</span>
+            <span>Lemon</span>
+            <span>Ginger</span>
+            <span>Elaichi</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="accompaniments-section" aria-label="Vending accompaniments">
+      <div class="container">
+        <div class="section-tag reveal">Vending Accompaniments</div>
+        <h2 class="section-heading reveal reveal-delay-1">
+          Everything that comes<br /><em>with the cup.</em>
+        </h2>
+
+        <div class="accompaniments-grid">
+          <article class="accompaniment-card reveal">
+            <div class="accompaniment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M7 5h10l1 14H6L7 5z" />
+                <path d="M9 5a3 3 0 0 1 6 0" />
+              </svg>
             </div>
+            <h3 class="accompaniment-card__title">Sugar Sachets</h3>
           </article>
 
-          <article class="product-feature product-feature--powder reveal">
-            <div class="product-feature__media">
-              <img class="product-feature__image" src="/assets/images/coffeepowder3.jpg"
-                alt="Grounded coffee powder for vending machines" />
+          <article class="accompaniment-card reveal reveal-delay-1">
+            <div class="accompaniment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M8 5h8l2 7-6 7-6-7 2-7z" />
+                <path d="M9.5 9.5h5" />
+              </svg>
             </div>
-            <div class="product-feature__content">
-              <div class="product-feature__label">Coffee Powder</div>
-              <h3 class="product-feature__title">Filter Coffee Powder</h3>
-              <p class="product-feature__text">
-                Filter coffee powder prepared for vending machine beverage
-                setups, helping offices serve consistent coffee with reliable
-                taste, aroma, and quick cup delivery.
-              </p>
-              <div class="product-tags" aria-label="Product qualities">
-                <span> Filter coffee</span>
-                <span>Vending ready</span>
-                <span>Consistent taste</span>
-              </div>
-            </div>
+            <h3 class="accompaniment-card__title">Jaggery Sachets</h3>
           </article>
 
-          <article class="product-feature product-feature--tea reveal">
-            <div class="product-feature__media">
-              <img class="product-feature__image" src="/assets/images/tealeaves3.jpg"
-                alt="Premium tea leaves for vending machines" />
+          <article class="accompaniment-card reveal reveal-delay-2">
+            <div class="accompaniment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M7 6h10v12H7z" />
+                <path d="M7 10h10" />
+                <path d="M10 14h4" />
+              </svg>
             </div>
-            <div class="product-feature__content">
-              <div class="product-feature__label">Vending Tea Supply</div>
-              <h3 class="product-feature__title">Premium Tea Leaves</h3>
-              <p class="product-feature__text">
-                Premium tea leaves selected for vending machine beverage
-                programs, helping offices offer reliable tea alongside coffee.
-                This keeps the product range simple while covering the most
-                common workplace beverage preferences.
-              </p>
-              <div class="product-tags" aria-label="Product qualities">
-                <span>Tea leaves</span>
-                <span>Machine ready</span>
-                <span>Office supply</span>
-              </div>
+            <h3 class="accompaniment-card__title">Refined Sugar</h3>
+          </article>
+
+          <article class="accompaniment-card reveal reveal-delay-3">
+            <div class="accompaniment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M8 4h8l3 5v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9l3-5z" />
+                <path d="M9 12h6" />
+              </svg>
             </div>
+            <h3 class="accompaniment-card__title">Horlicks &amp; Boost</h3>
+          </article>
+
+          <article class="accompaniment-card reveal">
+            <div class="accompaniment-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <!-- stirrer stick -->
+                <line x1="12" y1="3" x2="12" y2="18" />
+                <!-- flat paddle at bottom -->
+                <ellipse cx="12" cy="19.5" rx="3" ry="1.5" />
+              </svg>
+            </div>
+            <h3 class="accompaniment-card__title">Wooden Stirrers</h3>
           </article>
         </div>
       </div>
@@ -276,8 +407,9 @@
           <div class="footer__col-title">Products</div>
           <ul class="footer__links" role="list">
             <li><a href="products.html">Roasted Coffee Beans</a></li>
-            <li><a href="products.html">Filter Coffee Powder</a></li>
+            <li><a href="products.html">Grounded Coffee Powder</a></li>
             <li><a href="products.html">Premium Tea Leaves & Dust Powder</a></li>
+            <li><a href="products.html">Instant Coffee Powder</a></li>
           </ul>
         </div>
 

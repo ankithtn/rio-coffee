@@ -66,6 +66,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
+    /* -- Products carousel -- */
+    document.querySelectorAll('[data-product-carousel]').forEach((carousel) => {
+        const track = carousel.querySelector('[data-carousel-track]');
+        const cards = Array.from(track?.querySelectorAll('.product-card') || []);
+        const prev = carousel.querySelector('[data-carousel-prev]');
+        const next = carousel.querySelector('[data-carousel-next]');
+        const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
+
+        if (!track || !cards.length) return;
+
+        const setActiveCard = () => {
+            const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+            let activeIndex = 0;
+            let nearestDistance = Number.POSITIVE_INFINITY;
+
+            cards.forEach((card, index) => {
+                const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                const distance = Math.abs(cardCenter - trackCenter);
+                const isActive = distance < nearestDistance;
+
+                if (isActive) {
+                    nearestDistance = distance;
+                    activeIndex = index;
+                }
+            });
+
+            cards.forEach((card, index) => {
+                card.classList.toggle('product-card--active', index === activeIndex);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('is-active', index === activeIndex);
+            });
+        };
+
+        const scrollToCard = (index) => {
+            const target = cards[index];
+            if (!target) return;
+
+            track.scrollTo({
+                left: target.offsetLeft - ((track.clientWidth - target.offsetWidth) / 2),
+                behavior: 'smooth'
+            });
+        };
+
+        prev?.addEventListener('click', () => {
+            const currentIndex = cards.findIndex((card) => card.classList.contains('product-card--active'));
+            scrollToCard(Math.max(0, currentIndex - 1));
+        });
+
+        next?.addEventListener('click', () => {
+            const currentIndex = cards.findIndex((card) => card.classList.contains('product-card--active'));
+            scrollToCard(Math.min(cards.length - 1, currentIndex + 1));
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => scrollToCard(index));
+        });
+
+        let scrollTimer;
+        track.addEventListener('scroll', () => {
+            window.clearTimeout(scrollTimer);
+            scrollTimer = window.setTimeout(setActiveCard, 70);
+        }, { passive: true });
+
+        window.addEventListener('resize', setActiveCard);
+        setActiveCard();
+    });
+
 });
 
 function animateCounter(el, target) {
